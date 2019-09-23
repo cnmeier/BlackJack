@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Hand
 {
-    List<Card> hand = new ArrayList<>(); 
+    private List<Card> hand = new ArrayList<>(); 
     private int points = 0;
     //Card card = new Card(void, void);
  
@@ -61,12 +61,12 @@ public class Hand
     */
     public String checkPoints()
     {
-        private status = "in progress"
+        String status = "in progress";
        
         if (points == 21)
-            status = "winner" // need to check if Ace and face card or not
+            status = "winner"; // need to check if Ace and face card or not
         else if (points > 21)
-            status = "loser"
+            status = "loser";
        
         return status;
     }
