@@ -64,7 +64,7 @@ public class Hand
         private status = "in progress"
        
         if (points == 21)
-            status = "winner"
+            status = "winner" // need to check if Ace and face card or not
         else if (points > 21)
             status = "loser"
        
