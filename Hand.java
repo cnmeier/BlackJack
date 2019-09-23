@@ -54,5 +54,20 @@ public class Hand
                     points += 1;  
         }
     }
-
+    
+   /* 
+    * Purpose: Check the current number of points to determine game status
+    * @return: The status of the game after the new card
+    */
+    public String checkPoints()
+    {
+        private status = "in progress"
+       
+        if (points == 21)
+            status = "winner"
+        else if (points > 21)
+            status = "loser"
+       
+        return status;
+    }
 }
