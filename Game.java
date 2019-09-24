@@ -44,17 +44,27 @@ public class Game
         return "no winner";
     }
 
-    /*
+    
     public void playerTurn()
     {
-        System.out.println("Your cards are: "); //d
-        for (int i = 0; i < playerHand.cardsInHand; i++)
-            System.out.println(" " + playerHand.get(i).suit + playerHand.get(i).rank); //d
-       
-        System.out.println("Your current point value is " + playerHand.points);
+        //for (int i = 0; i < playerHand.cardsInHand; i++)
+            //playerHand.printHand();
+        String bet;
+        Scanner input = new Scanner(System.in);
+ 
+        for(int i = 0; i < 3; i++)
+        {
+            do
+            {
+                System.out.println("Would you like to bet? (y for yes, n for no)");
+                bet = input.nextLine();
+            } while(bet != "y" && bet != "n");
 
-
-
-    }*/
+            if( bet == "y")
+                playerHand.dealCard(deck.dealCard());
+            else
+                break;
+        }
+    }
 }
 
