@@ -7,12 +7,15 @@ public class Hand
 {
     private List<Card> hand;// = new ArrayList<>(); 
     public int points;
+    public int cardsInHand;
+
     //Card card = new Card(void, void);
  
     public Hand()
     {
        hand = new ArrayList<>();
        this.points = 0;
+       this.cardsInHand = 0;
     }
 
    /* 
@@ -23,8 +26,8 @@ public class Hand
     */
     public void createHand(Card card1, Card card2)
     {
-        hand.add(card1);
-        hand.add(card2);       
+        hand.dealCard(card1);
+        hand.dealCard(card2);    
     }
 
    /*
@@ -35,6 +38,7 @@ public class Hand
     public void dealCard(Card newCard)
     {
         hand.add(newCard);
+        this.cardsInHand += 1; 
     }
     
    /* 

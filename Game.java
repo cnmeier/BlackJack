@@ -5,17 +5,24 @@ import java.util.*;
 
 public class Game
 {
-    /*public static void main(String[] args)
+    /*private Game game;
+
+    public static void main(String[] args)
     {
+        game = new Game();
+        game.startGame();
+       
+        // game.checkWinner();
+        
+        game.playerTurn();
+
+        /*
         char bet = 'y';
         Scanner input = new Scanner(System.in);
     
         int totalBets = 0;
         int maxBets = 3;         
-   
-        
-
-
+  
         while(totalBets < maxBets)
         {
             do
@@ -54,8 +61,6 @@ public class Game
 
         playerHand.updatePoints();
         dealerHand.updatePoints();
-
-        checkWinner(); 
     }
    
     public String checkWinner()
@@ -70,6 +75,18 @@ public class Game
             //if yes, that player wins
             //if not, draw
         return "no winner";
+    }
+
+    public void playerTurn()
+    {
+        System.out.println("Your cards are: "); //d
+        for (int i = 0; i < playerHand.cardsInHand; i++)
+            System.out.println(" " + playerHand.get(i).suit + playerHand.get(i).rank); //d
+       
+        System.out.println("Your current point value is " + playerHand.points);
+
+
+
     }
 }
 
