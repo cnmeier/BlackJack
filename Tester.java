@@ -1,15 +1,24 @@
 public class Tester
 {
-    private Game game;
-
     public static void main(String[] args)
     {
-        game = new Game();
+        Game game = new Game();
         game.startGame();
-       
-        // game.checkWinner();
-        
-        game.playerTurn();  
+         
+        // if (game.checkWinner() == "player")
+           // PLAYER WINS
+        // else if (game.checkWinner() == "dealer")
+           // DEALER WINS
+        // else
+        // {
+            // game.playerTurn();  
+            // game.dealerTurn();
+      
+            // if(game.checkWinner() == "player")
+                // PLAYER WINS
+            //else
+                // DEALER WINS
+        // }
     }
 
 }
