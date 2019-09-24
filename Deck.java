@@ -19,8 +19,8 @@ public class Deck
         {
             for (int j = 0; j < ranks.length; j++)
             {
-                deck[(i + 1) * (j - 1)].suit = suits[i];
-                deck[(i + 1)*(j - 1)].rank = ranks[j];
+                deck[(i + 1) * (j + 1) - 1].suit = suits[i];
+                deck[(i + 1) * (j + 1) - 1].rank = ranks[j];
             }
         } 
     }
