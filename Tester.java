@@ -1,4 +1,4 @@
-public class Tester
+public class Tester()
 (
     private Game game;
 
