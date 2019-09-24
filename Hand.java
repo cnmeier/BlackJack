@@ -5,12 +5,14 @@ import java.util.*;
 
 public class Hand
 {
-    private List<Card> hand = new ArrayList<>(); 
-    private int points = 0;
+    private List<Card> hand;// = new ArrayList<>(); 
+    public int points;
     //Card card = new Card(void, void);
  
     public Hand()
     {
+       hand = new ArrayList<>();
+       this.points = 0;
     }
 
    /* 
@@ -25,12 +27,12 @@ public class Hand
         hand.add(card2);       
     }
 
-   /* 
+   /*
     * Purpose: Add a card to the hand
     * @param: The new card
     * @return: Nothing
     */
-    public void addCard(Card newCard)
+    public void dealCard(Card newCard)
     {
         hand.add(newCard);
     }
@@ -43,15 +45,15 @@ public class Hand
     {
         for(int i = 0; i < hand.size(); i++)
         {
-            if ('2' <= hand.get(i).rank && (char)10 >= hand.get(i).rank)
-                points += Integer.valueOf(hand.get(i).rank);
+            if ('1' <= hand.get(i).rank && 9 >= hand.get(i).rank) //where 1 represents 10
+                this.points += Integer.valueOf(hand.get(i).rank);
             else if (hand.get(i).rank == 'J' || hand.get(i).rank == 'Q' || hand.get(i).rank == 'K')
-                points += 10;
+                this.points += 10;
             else 
-                if (points <= 10)
-                    points += 11;
+                if (this.points <= 10)
+                    this.points += 11;
                 else
-                    points += 1;  
+                    this.points += 1;  
         }
     }
     

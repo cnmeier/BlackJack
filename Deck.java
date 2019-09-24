@@ -48,8 +48,9 @@ public class Deck
     public Card dealCard()
     {
         if (cardsDealt == 52)
-          shuffleDeck();
-      
+            shuffleDeck();
+        
+       
         cardsDealt++;
         return deck[cardsDealt - 1];
     }
