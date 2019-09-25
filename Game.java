@@ -22,23 +22,30 @@ public class Game
         
         dealerHand.addCard(deck.dealCard());
         dealerHand.addCard(deck.dealCard());
+        System.out.println("The dealer has: ");
+        dealerHand.printHand();
   
         playerHand.addCard(deck.dealCard()); 
         playerHand.addCard(deck.dealCard());
+        System.out.println("You have: ");
+        playerHand.printHand();
     }
    
-    public String checkFirstDeal()
+/*    public String checkOver()
     {
         if(playerHand.points > 21)
             return "dealer";
+        else if (dealerHand.points > 21
         return "";
     }
-
+*/
     public String checkWinner()
     {
-        //if(playerHand.points > 21)
-          //  return "dealer";
-        if(playerHand.points == 21 && dealerHand.points != 21)
+        if(playerHand.points > 21)
+            return "dealer";
+        else if (dealerHand.points > 21)
+            return "player";
+        else if(playerHand.points == 21 && dealerHand.points != 21)
             return "player";
         else if(playerHand.points != 21 && dealerHand.points == 21)
             return "dealer";
@@ -53,35 +60,41 @@ public class Game
     
     public void playerTurn()
     {
-        String bet;
+        int bet;
         Scanner input = new Scanner(System.in);
  
         for(int i = 0; i < 3; i++)
         {
             do
             {
-                System.out.println("Would you like to bet? (y for yes, n for no)");
-                bet = input.next().trim();
-            } while(!(bet != "y" || bet != "n"));
-            if( bet == "y")
+                System.out.println("Would you like to bet? (1 for yes, 0 for no)");
+                bet = input.nextInt();
+            } while(bet != 1 && bet != 0);
+
+            if( bet == 1)
             {  
                 playerHand.addCard(deck.dealCard());
-            
+                System.out.println("You have: ");
+                playerHand.printHand();    
             }
             else
                 break;
         }
+      
+        
+
     }
 
     public void dealerTurn()
     {
-        //for (int i = 0; i < dealerHand.cardsInHand; i++)
-            //dealerHand.printHand();
-
         for(int i = 0; i < 3; i++)
         {
             if(dealerHand.points <= 16)
+            {
                 dealerHand.addCard(deck.dealCard());
+                System.out.println("Dealer has: ");
+                dealerHand.printHand();
+            }
             else
                 break;
         }

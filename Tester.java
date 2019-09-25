@@ -5,28 +5,25 @@ public class Tester
         Game game = new Game();
         game.startGame();
          
-        /*if (game.checkFirstDeal() == "dealer")
-            System.out.println("DEALER WINS");
-        else if (game.checkWinner() == "dealer")
+        if (game.checkWinner() == "dealer")
             System.out.println("DEALER WINS");
         else if (game.checkWinner() == "player")
-             System.out.println("PLAYER WINS");
+            System.out.println("PLAYER WINS");
         else
-        {*/
+        {
             game.playerTurn();  
-           /* if (game.checkWinner() == "dealer")
-               System.out.println("DEALER WINS");
+            if (game.checkWinner() == "dealer")
+                System.out.println("DEALER WINS");
             else
-            {*/            
+            {           
                 game.dealerTurn();
-               /* System.out.println(game.checkWinner());   
-
                 if(game.checkWinner() == "player")
                     System.out.println("PLAYER WINS");
                 else
-                    System.out.println("PLAYER WINS");
+                    System.out.println("DEALER WINS");
+                //at this point need to check who is closest 
             }
-        }*/
+        }
     }
 
 }

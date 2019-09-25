@@ -41,7 +41,7 @@ public class Hand
         hand[this.cardsInHand] = newCard;
         this.cardsInHand += 1; 
         updatePoints();
-        printHand();
+        //printHand();
     }
     
    /* 
@@ -51,31 +51,34 @@ public class Hand
     public void updatePoints()
     {
         boolean ace = false;
-         
+        int newPoints = 0;        
+ 
         for(int i = 0; i < this.cardsInHand; i++)
         {
             Card card;
             char cardRank = (hand[i]).rank;
- 
+
             if(cardRank == 'J' || cardRank == 'Q' || cardRank == 'K' || cardRank == '1' )
-                this.points += 10;
+                newPoints += 10;
             else if(cardRank == 'A')
                 ace = true;
             else
-                this.points += cardRank;
+                newPoints += Character.getNumericValue(cardRank);
         }
     
         if(ace == true)
-            if(this.points + 10 <= 21)
-                points += 10;
+            if(newPoints + 10 <= 21)
+                newPoints += 10;
             else
-                points += 1;
+                newPoints += 1;
+
+        this.points = newPoints;
     }
 
     public void printHand()
     {
         for(int i = 0; i < cardsInHand; i++)
-            System.out.println(hand[i].rank+hand[i].suit);
+            System.out.println(hand[i].rank + "" + hand[i].suit);
         System.out.println("Points: " + this.points);
     }
     
