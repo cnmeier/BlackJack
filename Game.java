@@ -66,5 +66,19 @@ public class Game
                 break;
         }
     }
+
+    public void dealerTurn()
+    {
+        //for (int i = 0; i < dealerHand.cardsInHand; i++)
+            //dealerHand.printHand();
+
+        for(int i = 0; i < 3; i++)
+        {
+            if(dealerHand.points <= 16)
+                dealerHand.dealCard(deck.dealCard());
+            else
+                break;
+        }
+    }
 }
 
