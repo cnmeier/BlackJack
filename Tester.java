@@ -12,6 +12,8 @@ public class Tester
         // else
         // {
             // game.playerTurn();  
+            // if player points > 21
+              // end game, dealer wins
             // game.dealerTurn();
       
             // if(game.checkWinner() == "player")
