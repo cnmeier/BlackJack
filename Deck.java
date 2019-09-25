@@ -8,21 +8,19 @@ public class Deck
     private Card[] deck;
     private int cardsDealt;
 
+    //char[] suits;
+    //char[] rank;
+
     public Deck()
     {
         deck = new Card[52];
         
         char[] suits = {'s', 'c', 'd', 'h'};
-        char[] ranks = {'A', '2', '3', '4', '5', '6', '7', '8', '9', '1', 'J', 'Q', 'K'};
-
+        char[] ranks = {'A', '2', '3', '4', '5', '6', '7', '8', '9', '1', 'J', 'Q', 'K'}; 
+        int numCards = 0; 
         for (int i = 0; i < suits.length; i++)
-        {
             for (int j = 0; j < ranks.length; j++)
-            {
-                deck[(i + 1) * (j + 1) - 1].suit = suits[i];
-                deck[(i + 1) * (j + 1) - 1].rank = ranks[j];
-            }
-        } 
+                deck[numCards++] = new Card(suits[i],ranks[j]);
     }
 
    /* 
@@ -30,7 +28,7 @@ public class Deck
     */
     public void shuffleDeck()
     {
-        for (int i = 0; i < deck.length; i++)
+        for (int i = deck.length-1; i > 0; i--)
         {
             int randomCard = (int)(Math.random() * (i + 1));
             Card temp = deck[i];
@@ -49,9 +47,7 @@ public class Deck
     {
         if (cardsDealt == 52)
             shuffleDeck();
-        
-       
-        cardsDealt++;
-        return deck[cardsDealt - 1];
+
+        return deck[cardsDealt++];
     }
 }

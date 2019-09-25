@@ -5,22 +5,28 @@ public class Tester
         Game game = new Game();
         game.startGame();
          
-        // if (game.checkWinner() == "player")
-           // PLAYER WINS
-        // else if (game.checkWinner() == "dealer")
-           // DEALER WINS
-        // else
-        // {
-            // game.playerTurn();  
-            // if player points > 21
-              // end game, dealer wins
-            // game.dealerTurn();
-      
-            // if(game.checkWinner() == "player")
-                // PLAYER WINS
-            //else
-                // DEALER WINS
-        // }
+        /*if (game.checkFirstDeal() == "dealer")
+            System.out.println("DEALER WINS");
+        else if (game.checkWinner() == "dealer")
+            System.out.println("DEALER WINS");
+        else if (game.checkWinner() == "player")
+             System.out.println("PLAYER WINS");
+        else
+        {*/
+            game.playerTurn();  
+           /* if (game.checkWinner() == "dealer")
+               System.out.println("DEALER WINS");
+            else
+            {*/            
+                game.dealerTurn();
+               /* System.out.println(game.checkWinner());   
+
+                if(game.checkWinner() == "player")
+                    System.out.println("PLAYER WINS");
+                else
+                    System.out.println("PLAYER WINS");
+            }
+        }*/
     }
 
 }

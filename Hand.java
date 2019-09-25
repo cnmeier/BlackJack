@@ -5,15 +5,16 @@ import java.util.*;
 
 public class Hand
 {
-    private List<Card> hand;// = new ArrayList<>(); 
+    private Card[] hand;// = new ArrayList<>(); 
     public int points;
     public int cardsInHand;
+    static int MAX_CARDS_IN_HAND = 5;
 
     //Card card = new Card(void, void);
  
     public Hand()
     {
-       hand = new ArrayList<>();
+       hand = new Card[MAX_CARDS_IN_HAND];
        this.points = 0;
        this.cardsInHand = 0;
     }
@@ -23,22 +24,24 @@ public class Hand
     * @param: The first card dealt
     * @param: The second card dealt
     * @return: Nothing
-    */
+    *
     public void createHand(Card card1, Card card2)
     {
         hand.dealCard(card1);
         hand.dealCard(card2);    
-    }
+    }*/
 
    /*
     * Purpose: Add a card to the hand
     * @param: The new card
     * @return: Nothing
     */
-    public void dealCard(Card newCard)
+    public void addCard(Card newCard)
     {
-        hand.add(newCard);
+        hand[this.cardsInHand] = newCard;
         this.cardsInHand += 1; 
+        updatePoints();
+        printHand();
     }
     
    /* 
@@ -47,25 +50,40 @@ public class Hand
     */
     public void updatePoints()
     {
-        for(int i = 0; i < hand.size(); i++)
+        boolean ace = false;
+         
+        for(int i = 0; i < this.cardsInHand; i++)
         {
-            if ('1' <= hand.get(i).rank && 9 >= hand.get(i).rank) //where 1 represents 10
-                this.points += Integer.valueOf(hand.get(i).rank);
-            else if (hand.get(i).rank == 'J' || hand.get(i).rank == 'Q' || hand.get(i).rank == 'K')
+            Card card;
+            char cardRank = (hand[i]).rank;
+ 
+            if(cardRank == 'J' || cardRank == 'Q' || cardRank == 'K' || cardRank == '1' )
                 this.points += 10;
-            else 
-                if (this.points <= 10)
-                    this.points += 11;
-                else
-                    this.points += 1;  
+            else if(cardRank == 'A')
+                ace = true;
+            else
+                this.points += cardRank;
         }
+    
+        if(ace == true)
+            if(this.points + 10 <= 21)
+                points += 10;
+            else
+                points += 1;
+    }
+
+    public void printHand()
+    {
+        for(int i = 0; i < cardsInHand; i++)
+            System.out.println(hand[i].rank+hand[i].suit);
+        System.out.println("Points: " + this.points);
     }
     
    /* 
     * Purpose: Check the current number of points to determine game status
     * @return: The status of the game after the new card
-    */
-    public String checkPoints()
+    *
+    public String checkWinner()
     {
         String status = "in progress";
        
@@ -75,5 +93,5 @@ public class Hand
             status = "loser";
        
         return status;
-    }
+    }*/
 }

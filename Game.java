@@ -19,36 +19,40 @@ public class Game
     public void startGame()
     {
         deck.shuffleDeck();
-    
-        dealerHand.dealCard(deck.dealCard());
-        dealerHand.dealCard(deck.dealCard());
-
-        playerHand.dealCard(deck.dealCard()); 
-        playerHand.dealCard(deck.dealCard());
-
-        playerHand.updatePoints();
-        dealerHand.updatePoints();
+        
+        dealerHand.addCard(deck.dealCard());
+        dealerHand.addCard(deck.dealCard());
+  
+        playerHand.addCard(deck.dealCard()); 
+        playerHand.addCard(deck.dealCard());
     }
    
+    public String checkFirstDeal()
+    {
+        if(playerHand.points > 21)
+            return "dealer";
+        return "";
+    }
+
     public String checkWinner()
     {
+        //if(playerHand.points > 21)
+          //  return "dealer";
         if(playerHand.points == 21 && dealerHand.points != 21)
             return "player";
         else if(playerHand.points != 21 && dealerHand.points == 21)
             return "dealer";
         else if(playerHand.points == 21 && dealerHand.points == 21)  
             return "draw";
-            //check if one has ace and queen
+            //check if one has ace and face
             //if yes, that player wins
             //if not, draw
-        return "no winner";
+        return "no draw";
     }
 
     
     public void playerTurn()
     {
-        //for (int i = 0; i < playerHand.cardsInHand; i++)
-            //playerHand.printHand();
         String bet;
         Scanner input = new Scanner(System.in);
  
@@ -57,11 +61,13 @@ public class Game
             do
             {
                 System.out.println("Would you like to bet? (y for yes, n for no)");
-                bet = input.nextLine();
-            } while(bet != "y" && bet != "n");
-
+                bet = input.next().trim();
+            } while(!(bet != "y" || bet != "n"));
             if( bet == "y")
-                playerHand.dealCard(deck.dealCard());
+            {  
+                playerHand.addCard(deck.dealCard());
+            
+            }
             else
                 break;
         }
@@ -75,7 +81,7 @@ public class Game
         for(int i = 0; i < 3; i++)
         {
             if(dealerHand.points <= 16)
-                dealerHand.dealCard(deck.dealCard());
+                dealerHand.addCard(deck.dealCard());
             else
                 break;
         }
