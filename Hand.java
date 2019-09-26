@@ -78,6 +78,9 @@ public class Hand
         this.points = newPoints;
     }
 
+    /*
+     * Purpose: To print out the updated number of points based on the cards in the hand
+     */
     public void printHand()
     {
         for(int i = 0; i < cardsInHand; i++)
