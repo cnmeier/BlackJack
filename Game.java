@@ -8,7 +8,10 @@ public class Game
     private Deck deck;
     private Hand dealerHand;
     private Hand playerHand;
-  
+
+    /*
+     * Purpose: to instantiate Deck and Hand objects that will be represented as the deck and dealer or player hand
+     */  
     public Game()
     {
         deck = new Deck();        
