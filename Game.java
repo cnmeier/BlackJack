@@ -68,7 +68,10 @@ public class Game
         return "no draw";
     }
 
-    
+
+    /*
+     * Purpose: To ask the player if they want to bet and deal cards if they say yes, otherwise end game
+     */    
     public void playerTurn()
     {
         int bet;
@@ -91,9 +94,6 @@ public class Game
             else
                 break;
         }
-      
-        
-
     }
 
     public void dealerTurn()
