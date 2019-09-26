@@ -19,6 +19,9 @@ public class Game
         playerHand = new Hand();
     }
 
+    /*
+     * Purpose: To start the game by shuffling the deck and giving the dealer and player their first two cards
+     */
     public void startGame()
     {
         deck.shuffleDeck();
