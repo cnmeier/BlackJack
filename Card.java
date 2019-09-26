@@ -8,8 +8,9 @@ public class Card
 
    /* 
     * Purpose: To set the suit and rank of a card
-    * Input: The suit and rank
-    * Return: Nothing
+    * @param: suit, the suit of the card (hearts, diamonds, spades, or clubs)
+    * @param: rank, the rank of the card (1-10, Jack, Queen, King, or Ace)
+    * @return: Nothing
     */
     public Card(char suit, char rank)
     {
@@ -17,5 +18,3 @@ public class Card
         this.rank = rank;
     }
 }
-
-
