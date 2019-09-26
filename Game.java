@@ -96,6 +96,9 @@ public class Game
         }
     }
 
+    /*
+     * Purpose: To deal the dealer cards for a total of at most 3 rounds if they have 16 or less points
+     */ 
     public void dealerTurn()
     {
         for(int i = 0; i < 3; i++)
