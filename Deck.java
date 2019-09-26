@@ -12,7 +12,7 @@ public class Deck
     //char[] rank;
 
    /* 
-    * Purpose: To insert 52 Card objects into the array, deck
+    * Purpose: To insert 52 card objects into the array, deck
     */
     public Deck()
     {
@@ -30,7 +30,7 @@ public class Deck
     }
 
    /* 
-    * Purpose: To shuffle the deck of card
+    * Purpose: To shuffle the deck of cards
     */
     public void shuffleDeck()
     {
