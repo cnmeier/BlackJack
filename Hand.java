@@ -12,6 +12,10 @@ public class Hand
 
     //Card card = new Card(void, void);
  
+    /*
+     * Purpose: To create a Card object that declares how many cards there can be in a hand and 
+     * instantiate points and the number of cards in a hand to 0 to start off with
+     */
     public Hand()
     {
        hand = new Card[MAX_CARDS_IN_HAND];
