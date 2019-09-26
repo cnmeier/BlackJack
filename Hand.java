@@ -37,7 +37,7 @@ public class Hand
 
    /*
     * Purpose: Add a card to the hand
-    * @param: The new card
+    * @param: newCard, the new card being added
     * @return: Nothing
     */
     public void addCard(Card newCard)
@@ -50,7 +50,6 @@ public class Hand
     
    /* 
     * Purpose: Update the current number of points in the hand
-    * @return: The current number of points
     */
     public void updatePoints()
     {
