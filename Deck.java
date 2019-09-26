@@ -11,13 +11,19 @@ public class Deck
     //char[] suits;
     //char[] rank;
 
+   /* 
+    * Purpose: To insert 52 Card objects into the array, deck
+    */
     public Deck()
     {
         deck = new Card[52];
         
+	//array holding all possible suits of cards
         char[] suits = {'s', 'c', 'd', 'h'};
+	//array holding all possible ranks of cards
         char[] ranks = {'A', '2', '3', '4', '5', '6', '7', '8', '9', '1', 'J', 'Q', 'K'}; 
         int numCards = 0; 
+	//looping through each suit and rank so all possible combinations between the two are met and stored into the deck
         for (int i = 0; i < suits.length; i++)
             for (int j = 0; j < ranks.length; j++)
                 deck[numCards++] = new Card(suits[i],ranks[j]);
