@@ -45,6 +45,11 @@ public class Game
         return "";
     }
 */
+
+    /*
+     * Purpose: To check if there's a winner by checking if the players or dealers cards are equal or more than 21
+     * @return: a string of the winner of the game based on number of points the dealer and player have
+     */
     public String checkWinner()
     {
         if(playerHand.points > 21)
