@@ -93,16 +93,29 @@ public class Game extends Activity {
         if (count >= 3) {
             if (game.checkWinner() == "dealer")
                 showDialog("DEALER WINS");
-            else {
-                game.dealerTurn();
-                if (game.checkWinner() == "player")
-                    showDialog("PLAYER WINS");
-                else if (game.checkWinner() == "dealer")
-                    showDialog("DEALER WINS");
-                else
-                    showDialog("TIE");
-            }
         }
+        
+        button.setEnabled(false);
+        if (count >= 3) {
+            if (game.checkWinner() == "dealer")
+                showDialog("DEALER WINS");
+        }
+    }
+
+    /**
+     * Purpose: To allow the user to forfeit the rest of their turns by clicking the "Stop" button
+     *
+     * @param view
+     *          the view of the screen
+     */
+    public void stop_button(View view) {
+        game.dealerTurn();
+        if (game.checkWinner() == "player")
+            showDialog("PLAYER WINS");
+        else if (game.checkWinner() == "dealer")
+            showDialog("DEALER WINS");
+        else
+            showDialog("TIE");
     }
 
     /**
