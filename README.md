@@ -8,7 +8,7 @@ Rebecca:
 I expect that I will write about 300 LOC and that it will take about 15 hours.
 
 ## Design
-We have four java classes: Card, Deck, Hand, and Game. The Card class contains the suit, rank, and imageId attributes for each card. The Deck class adds all 52 unique cards to the deck, shuffles the deck, and also deals a card. The Hand class, creates an array of up to 5 cards and updates/stores the points. Finally, the Game class handles each player's turn as well as connects the java code to the app (including displaying the cards to the screen). In addition, we have the MainActivity java class which is responsible for the first screen of the game.The Game class is the activity for the second screen.
+We have four java classes: Card, Deck, Hand, and Game. The Card class contains the suit, rank, and imageId attributes for each card. The Deck class adds all 52 unique cards to the deck, shuffles the deck, and also deals a card. The Hand class, creates an array of up to 5 cards and updates/stores the points. Finally, the Game class handles each player's turn as well as connects the java code to the app (including displaying the cards to the screen). In addition, we have the MainActivity java class which is responsible for the first screen of the game. The Game class is the activity for the second screen.
 
 ## Report
 
