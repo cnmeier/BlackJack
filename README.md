@@ -18,4 +18,4 @@ After we had completed the java code a week before the due date. We began workin
 
 Our predictions on the number of hours and LOC we would each contribute to the project were underestimations. In total, Rebecca spent about 20 hours on the project and wrote about 650 LOC. Chelsea spent about 17 hours on the project and wrote 500 LOC. Those hours we spent included both time spent researching and time spent coding and debugging. 
 
-# Video
+## Video
