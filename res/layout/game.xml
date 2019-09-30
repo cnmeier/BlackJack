@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.android_examples.com.layoutbackgroundcolorxml.MainActivity"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- red line -->
+        <View
+            android:layout_width="500dip"
+            android:layout_height="5dip"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="178dp"
+            android:background="#FF0000" />
+
+        <ImageView
+            android:id="@+id/ace_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/ace_of_clubs"
+            android:tag="ace_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ace_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/ace_of_diamonds"
+            android:tag="ace_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ace_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/ace_of_hearts"
+            android:tag="ace_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ace_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/ace_of_spades"
+            android:tag="ace_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/two_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/two_of_clubs"
+            android:tag="two_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/two_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/two_of_diamonds"
+            android:tag="two_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/two_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/two_of_hearts"
+            android:tag="two_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/two_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/two_of_spades"
+            android:tag="two_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/three_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/three_of_clubs"
+            android:tag="three_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/three_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/three_of_diamonds"
+            android:tag="three_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/three_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/three_of_hearts"
+            android:tag="three_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/three_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/three_of_spades"
+            android:tag="three_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/four_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/four_of_clubs"
+            android:tag="four_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/four_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/four_of_diamonds"
+            android:tag="four_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/four_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/four_of_hearts"
+            android:tag="four_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/four_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/four_of_spades"
+            android:tag="four_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/five_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/five_of_clubs"
+            android:tag="five_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/five_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/five_of_diamonds"
+            android:tag="five_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/five_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/five_of_hearts"
+            android:tag="five_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/five_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/five_of_spades"
+            android:tag="five_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/six_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/six_of_clubs"
+            android:tag="six_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/six_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/six_of_diamonds"
+            android:tag="six_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/six_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/six_of_hearts"
+            android:tag="six_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/six_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/six_of_spades"
+            android:tag="six_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/seven_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/seven_of_clubs"
+            android:tag="seven_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/seven_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/seven_of_diamonds"
+            android:tag="seven_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/seven_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/seven_of_hearts"
+            android:tag="seven_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/seven_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/seven_of_spades"
+            android:tag="seven_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/eight_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/eight_of_clubs"
+            android:tag="eight_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/eight_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/eight_of_diamonds"
+            android:tag="eight_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/eight_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/eight_of_hearts"
+            android:tag="eight_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/eight_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/eight_of_spades"
+            android:tag="eight_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/nine_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/nine_of_clubs"
+            android:tag="nine_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/nine_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/nine_of_diamonds"
+            android:tag="nine_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/nine_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/nine_of_hearts"
+            android:tag="nine_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/nine_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/nine_of_spades"
+            android:tag="nine_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ten_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/ten_of_clubs"
+            android:tag="ten_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ten_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/ten_of_diamonds"
+            android:tag="ten_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ten_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/ten_of_hearts"
+            android:tag="ten_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/ten_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/ten_of_spades"
+            android:tag="ten_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/jack_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/jack_of_clubs"
+            android:tag="jack_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/jack_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/jack_of_diamonds"
+            android:tag="jack_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/jack_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/jack_of_hearts"
+            android:tag="jack_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/jack_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/jack_of_spades"
+            android:tag="jack_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/queen_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/queen_of_clubs"
+            android:tag="queen_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/queen_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/queen_of_diamonds"
+            android:tag="queen_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/queen_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/queen_of_hearts"
+            android:tag="queen_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/queen_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/queen_of_spades"
+            android:tag="queen_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/king_of_clubs.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/king_of_clubs"
+            android:tag="king_of_clubs"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/king_of_diamonds.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/king_of_diamonds"
+            android:tag="king_of_diamonds"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/king_of_hearts.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/king_of_hearts"
+            android:tag="king_of_hearts"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/king_of_spades.png"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:background="@drawable/king_of_spades"
+            android:tag="king_of_spades"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/dealer_back1"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="5dp"
+            android:translationY="65dp"
+            android:background="@drawable/dealer_back"
+            android:tag="dealer_back1" />
+
+        <ImageView
+            android:id="@+id/dealer_back2"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="85dp"
+            android:translationY="65dp"
+            android:background="@drawable/dealer_back"
+            android:tag="dealer_back2" />
+
+        <ImageView
+            android:id="@+id/dealer_back3"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="165dp"
+            android:translationY="65dp"
+            android:background="@drawable/dealer_back"
+            android:tag="dealer_back3" />
+
+        <ImageView
+            android:id="@+id/dealer_back4"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="245dp"
+            android:translationY="65dp"
+            android:background="@drawable/dealer_back"
+            android:tag="dealer_back4" />
+
+        <ImageView
+            android:id="@+id/dealer_back5"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="325dp"
+            android:translationY="65dp"
+            android:background="@drawable/dealer_back"
+            android:tag="dealer_back5" />
+
+        <ImageView
+            android:id="@+id/player_back1"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="5dp"
+            android:translationY="250dp"
+            android:background="@drawable/player_back"
+            android:tag="player_back1" />
+
+        <ImageView
+            android:id="@+id/player_back2"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="85dp"
+            android:translationY="250dp"
+            android:background="@drawable/player_back"
+            android:tag="player_back2" />
+
+        <ImageView
+            android:id="@+id/player_back3"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="165dp"
+            android:translationY="250dp"
+            android:background="@drawable/player_back"
+            android:tag="player_back3" />
+
+        <ImageView
+            android:id="@+id/player_back4"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="245dp"
+            android:translationY="250dp"
+            android:background="@drawable/player_back"
+            android:tag="player_back4" />
+
+        <ImageView
+            android:id="@+id/player_back5"
+            android:layout_width="54dp"
+            android:layout_height="74dp"
+            android:translationX="325dp"
+            android:translationY="250dp"
+            android:background="@drawable/player_back"
+            android:tag="player_back5" />
+
+        <Button
+            android:id="@+id/hit_button"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="72dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginStart="27dp"
+            android:minHeight="5dp"
+            android:minWidth="150dp"
+            android:text="@string/hit_button"
+            android:textSize="20sp"
+            android:onClick="hit_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/stop_button"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/hit_button"
+            android:layout_marginEnd="33dp"
+            android:layout_marginRight="33dp"
+            android:minHeight="5dp"
+            android:minWidth="150dp"
+            android:text="@string/stop_button"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/new_game_button"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:minHeight="5dp"
+            android:minWidth="150dp"
+            android:onClick="goBack"
+            android:text="@string/new_game_button"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/dealer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dealer_text"
+        android:textColor="@color/textColor"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="5dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_text"
+        android:textColor="@color/textColor"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="185dp"
+        tools:ignore="MissingConstraints" />
+
+</android.support.constraint.ConstraintLayout>
