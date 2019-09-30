@@ -20,7 +20,7 @@
             android:layout_width="500dip"
             android:layout_height="5dip"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="178dp"
+            android:layout_marginTop="189dp"
             android:background="#FF0000" />
 
         <ImageView
@@ -584,27 +584,29 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
+        <TextView
+            android:id="@+id/dealer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dealer_text"
+            android:textColor="@color/textColor"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="203dp"
+            android:text="@string/player_text"
+            android:textColor="@color/textColor"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="200dp" />
+
     </RelativeLayout>
-
-
-    <TextView
-        android:id="@+id/dealer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/dealer_text"
-        android:textColor="@color/textColor"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="5dp"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/player"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/player_text"
-        android:textColor="@color/textColor"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="185dp"
-        tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
