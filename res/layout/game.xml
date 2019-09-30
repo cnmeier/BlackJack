@@ -562,6 +562,7 @@
             android:minHeight="5dp"
             android:minWidth="150dp"
             android:text="@string/stop_button"
+            android:onClick="stop_button"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
