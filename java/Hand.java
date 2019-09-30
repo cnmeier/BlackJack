@@ -7,17 +7,12 @@
 package com.example.chelseameier.blackjack;
 
 import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageView;
-import java.util.*;
 
 public class Hand extends Activity {
     public Card [] hand;
     public int points;
     public int cardsInHand;
     static int MAX_CARDS_IN_HAND = 5;
-
 
     /**
      * Purpose: To instantiate a String array as well as set points and cardsInHand to 0
